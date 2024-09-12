@@ -1,13 +1,14 @@
-package com.example.Project.Services;
+package com.example.Project.DAO;
+
 import java.util.List;
 
 import com.example.Project.Model.Products;
 
-public interface ProductsService{
+public interface ProductsDAO {
+
+	public List<Products> allListProducts();
 	
-	public List<Products> allProducts();
-	
-	public int addProduct(Products model);
+	public int createProduct(Products model);
 	
 	public int updateProduct(Products model);
 	
